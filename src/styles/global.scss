@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+
+    --green-hover: #00453A;
+    --green: #00856F;
+    --green-light: #DCE9E2;
+    --green-light2: #F7F9F9;
+    --beige: #FFFAF1;
+    --white: #EDEDED;
+    --gray-headline: #212529;
+    --gray-paragraph: #495057;
+}
+
+body {
+    font-family: "DM Sans", sans-serif;
+}
