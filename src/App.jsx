@@ -16,6 +16,7 @@ export default function App() {
         const response = await fetch(`https://api.unsplash.com/search/photos/?query=${inputValue}&client_id=${process.env.REACT_APP_UNSPLASH_API_KEY}`)
         const data = await response.json()
         setImages(data.results)
+        console.log(images)
         setPage(2)
       }
       
@@ -56,12 +57,12 @@ export default function App() {
 
       <div className="images-wrapper">
         {images.map((image) => (
-            <img loading="lazy" key={image.id} src={image.urls.full} />
+            <img loading="lazy" key={image.id} src={image.urls.full} alt={image.alt_description}/>
         ))}
       </div>
 
       <footer>
-        <button className={images.length == 0 ? "hide" : "none"} onClick={handleAddImages}>Mostrar Mais</button>
+        <button className={images.length === 0 ? "hide" : "none"} onClick={handleAddImages}>Mostrar Mais</button>
       </footer>
 
     </div>
