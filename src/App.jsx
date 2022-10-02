@@ -72,7 +72,7 @@ export default function App() {
       </div>
 
       <footer>
-        <p>Feito por <a href="https://www.juliocoutinho.dev" target="_blank">Julio Coutinho</a></p>
+        <p>Feito por <a href="https://www.juliocoutinho.dev" target="_blank" rel="noreferrer">Julio Coutinho</a></p>
       </footer>
 
     </div>
