@@ -63,7 +63,7 @@ export default function App() {
 
       <div className="images-wrapper">
         {images.map((image) => (
-            <img loading="lazy" key={image.id} src={image.urls.full} alt={image.alt_description}/>
+            <img loading="lazy" key={image.id} src={image.urls.regular} alt={image.alt_description}/>
         ))}
       </div>
 
